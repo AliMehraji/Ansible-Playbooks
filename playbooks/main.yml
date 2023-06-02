@@ -3,6 +3,6 @@
   hosts: all
   become: true
   roles:
-    # - Docker
+    - Docker
     - gitlab-runner
 ...
