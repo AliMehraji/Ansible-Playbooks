@@ -1,0 +1,7 @@
+---
+  - name: Restart Docker
+    service:
+      name: docker
+      state: "{{ DOCKER_RESTART_HANDLER_STATE }}"
+      enabled: "{{ DOCKER_SERVICE_ENABLED }}"
+    when: DOCKER_SERVICE_MANAGE | bool

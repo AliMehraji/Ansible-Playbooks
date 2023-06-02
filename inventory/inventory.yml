@@ -1,0 +1,10 @@
+---
+RedHat:
+  hosts:
+    Centos-9:
+
+Debian:
+  hosts:
+    Debian11:
+    Ubuntu2204:
+...

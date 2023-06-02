@@ -1,0 +1,4 @@
+---
+ansible_host: <Host_IP>
+ansible_user: <User-in-Host>
+...

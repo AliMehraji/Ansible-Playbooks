@@ -1,0 +1,5 @@
+---
+ansible_host: <Host_IP>
+ansible_user: <User-in-Host>
+ansible_ssh_port: <SSH_Port>
+...

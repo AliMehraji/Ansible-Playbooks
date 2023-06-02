@@ -1,0 +1,41 @@
+---
+  - name: Ensure old versions of Docker are not installed.
+    yum:
+      name: "{{ item }}"
+      state: "{{ OLD_DOCKER_VERSION_STATE }}"
+    loop: "{{ REDHAT_OLD_DOCKER_VERSION }}"
+
+  - name: Install Dependencies of RedHat Based Linux.
+    yum:
+      name: "{{ item }}"
+      update_cache: true
+      state: "{{ DEPENDENCIES_STATE }}"
+    loop: "{{ REDHAT_DEPENDENCIES }}"
+
+  - name: Add Docker GPG key.
+    rpm_key:
+      key: "{{ Docker_YUM_GPG_KEY }}"
+      state: present
+    when: DOCKER_ADD_REPO | bool
+
+  - name: Add Docker repository.
+  # get_url module uses cURL so if you get (403 Forbidden ) 
+  # Add Proxy for cURL in ~/.curlrc 
+  # proxy="socks5h://<Proxy-Server>:<Proxy-Port>" or proxy="http://<Proxy-Server>:<Proxy-Port>"
+  # See https://www.scrapingbee.com/blog/curl-proxy/
+    get_url:
+      url: "{{ DOCKER_YUM_REPO_URL }}"
+      dest: '/etc/yum.repos.d/docker-{{ DOCKER_EDITION }}.repo'
+      owner: root
+      group: root
+      mode: 0644
+    when: DOCKER_ADD_REPO | bool
+
+  - name: Install Docker And Docker Engine
+    yum:
+      name: "{{ item }}"
+      update_cache: true
+      state: present
+    loop: "{{ DOCKER }}"
+    notify:
+      - Restart Docker

@@ -1,0 +1,5 @@
+---
+  - name: Downloading gitlab-runner package
+    get_url:
+        url: "{{ GITLAB_RUNNER_URL }}"
+        dest: "/tmp/{{ GITLAB_RUNNER_ARCH_URL }}"

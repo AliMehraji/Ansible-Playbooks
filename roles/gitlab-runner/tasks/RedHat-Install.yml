@@ -1,0 +1,18 @@
+---
+  - name: Adding Repo ...
+    get_url: 
+      url: "{{ GITLAB_YUM_REPO_CONFIG_URL }}"
+      dest: "{{ YUM_REPO_PATH }}"
+      owner: root 
+      mode: '0644'
+
+  - name: Add Gitlab GPG key.
+    rpm_key:
+      key: "{{ GITLAB_YUM_GPG_KEY_URL }}"
+      state: "{{ KEY_STATE }}"
+
+  - name: installing gitlab-runner in RedHat 
+    yum:
+      name: "/tmp/{{ GITLAB_RUNNER_ARCH_URL }}"
+      state: "{{ GITLAB_RUNNER_STATE }}"
+      update_cache: "{{ UPDATE_CACHE }}"

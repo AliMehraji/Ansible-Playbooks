@@ -1,0 +1,8 @@
+---
+- name: Installing Docker & Docker compose
+  hosts: all
+  become: true
+  roles:
+    # - Docker
+    - gitlab-runner
+...
