@@ -1,0 +1,6 @@
+---
+  - name: Installing Python ...
+    raw: "{{ lookup('file', 'python-installation.sh') }}"
+    args:
+      executable: /bin/bash
+
