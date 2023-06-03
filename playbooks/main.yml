@@ -3,8 +3,8 @@
   hosts: all
   become: true
   roles:
+    - First-Step
+    - user-handling
     - Docker
     - gitlab-runner
-    - user-handling
-    - First-Step
 ...
