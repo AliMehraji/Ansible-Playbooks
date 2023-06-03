@@ -1,0 +1,4 @@
+---
+- include_tasks: Create-User.yml
+- include_tasks: Update-Password.yml
+- include_tasks: Delete-User.yml

@@ -1,0 +1,8 @@
+---
+# vars file for user-handling
+
+USER_NAME:
+USER_PASSWORD:
+USER_SHELL:
+COMMENT:
+NEW_PASSWORD: 
