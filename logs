@@ -1,0 +1,84 @@
+2024-01-26 23:16:29,601 p=35646 u=ali n=ansible | PLAY [Install Python, Docker, Gitlab-Runner PlayBook  ...] ******************************************************************************************************************
+2024-01-26 23:16:29,656 p=35646 u=ali n=ansible | TASK [User_Handling : include_tasks] ****************************************************************************************************************************************
+2024-01-26 23:16:29,677 p=35646 u=ali n=ansible | included: /home/ali/Projects/Ansible-Playbooks/roles/User_Handling/tasks/Create-User.yml for Centos-Server-1, Centos-Server-2
+2024-01-26 23:16:29,687 p=35646 u=ali n=ansible | TASK [User_Handling : Creating User "ali.mehraji" ...] **********************************************************************************************************************
+2024-01-26 23:16:30,663 p=35646 u=ali n=ansible | changed: [Centos-Server-1]
+2024-01-26 23:16:30,670 p=35646 u=ali n=ansible | changed: [Centos-Server-2]
+2024-01-26 23:16:30,720 p=35646 u=ali n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-01-26 23:16:30,720 p=35646 u=ali n=ansible | Centos-Server-1            : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:16:30,720 p=35646 u=ali n=ansible | Centos-Server-2            : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:24:45,511 p=36763 u=ali n=ansible | PLAY [Install Python, Docker, Gitlab-Runner PlayBook  ...] ******************************************************************************************************************
+2024-01-26 23:24:45,548 p=36763 u=ali n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-01-26 23:24:46,571 p=36763 u=ali n=ansible | ok: [Centos-Server-2]
+2024-01-26 23:24:46,576 p=36763 u=ali n=ansible | ok: [Centos-Server-1]
+2024-01-26 23:24:46,622 p=36763 u=ali n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-01-26 23:24:46,622 p=36763 u=ali n=ansible | Centos-Server-1            : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:24:46,622 p=36763 u=ali n=ansible | Centos-Server-2            : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:25:36,500 p=36976 u=ali n=ansible | PLAY [Install Python, Docker, Gitlab-Runner PlayBook  ...] ******************************************************************************************************************
+2024-01-26 23:25:36,595 p=36976 u=ali n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-01-26 23:25:54,412 p=37040 u=ali n=ansible | PLAY [Install Python, Docker, Gitlab-Runner PlayBook  ...] ******************************************************************************************************************
+2024-01-26 23:25:54,510 p=37040 u=ali n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-01-26 23:27:36,166 p=37239 u=ali n=ansible | PLAY [Install Python, Docker, Gitlab-Runner PlayBook  ...] ******************************************************************************************************************
+2024-01-26 23:27:36,195 p=37239 u=ali n=ansible | TASK [User_Handling : Creating User "ali.mehraji" ...] **********************************************************************************************************************
+2024-01-26 23:27:37,169 p=37239 u=ali n=ansible | changed: [Centos-Server-2]
+2024-01-26 23:27:37,174 p=37239 u=ali n=ansible | changed: [Centos-Server-1]
+2024-01-26 23:27:37,244 p=37239 u=ali n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-01-26 23:27:37,244 p=37239 u=ali n=ansible | Centos-Server-1            : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:27:37,244 p=37239 u=ali n=ansible | Centos-Server-2            : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:27:44,346 p=37314 u=ali n=ansible | PLAY [Install Python, Docker, Gitlab-Runner PlayBook  ...] ******************************************************************************************************************
+2024-01-26 23:27:44,373 p=37314 u=ali n=ansible | TASK [User_Handling : Creating User "ali.mehraji" ...] **********************************************************************************************************************
+2024-01-26 23:27:45,115 p=37314 u=ali n=ansible | changed: [Centos-Server-2]
+2024-01-26 23:27:45,121 p=37314 u=ali n=ansible | changed: [Centos-Server-1]
+2024-01-26 23:27:45,164 p=37314 u=ali n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-01-26 23:27:45,164 p=37314 u=ali n=ansible | Centos-Server-1            : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:27:45,164 p=37314 u=ali n=ansible | Centos-Server-2            : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:30:13,645 p=37699 u=ali n=ansible | PLAY [Install Python, Docker, Gitlab-Runner PlayBook  ...] ******************************************************************************************************************
+2024-01-26 23:30:13,727 p=37699 u=ali n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-01-26 23:30:17,219 p=37719 u=ali n=ansible | PLAY [Install Python, Docker, Gitlab-Runner PlayBook  ...] ******************************************************************************************************************
+2024-01-26 23:30:17,247 p=37719 u=ali n=ansible | TASK [User_Handling : Creating User "ali.mehraji" ...] **********************************************************************************************************************
+2024-01-26 23:30:18,181 p=37719 u=ali n=ansible | changed: [Centos-Server-1]
+2024-01-26 23:30:18,185 p=37719 u=ali n=ansible | changed: [Centos-Server-2]
+2024-01-26 23:30:18,228 p=37719 u=ali n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-01-26 23:30:18,228 p=37719 u=ali n=ansible | Centos-Server-1            : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:30:18,228 p=37719 u=ali n=ansible | Centos-Server-2            : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:30:59,153 p=37932 u=ali n=ansible | PLAY [Install Python, Docker, Gitlab-Runner PlayBook  ...] ******************************************************************************************************************
+2024-01-26 23:30:59,182 p=37932 u=ali n=ansible | TASK [User_Handling : Creating User "ali.mehraji" ...] **********************************************************************************************************************
+2024-01-26 23:30:59,924 p=37932 u=ali n=ansible | changed: [Centos-Server-1]
+2024-01-26 23:30:59,928 p=37932 u=ali n=ansible | changed: [Centos-Server-2]
+2024-01-26 23:30:59,933 p=37932 u=ali n=ansible | TASK [User_Handling : Add SSH Key to Authorized Keys] ***********************************************************************************************************************
+2024-01-26 23:31:00,288 p=37932 u=ali n=ansible | changed: [Centos-Server-1]
+2024-01-26 23:31:00,289 p=37932 u=ali n=ansible | changed: [Centos-Server-2]
+2024-01-26 23:31:00,333 p=37932 u=ali n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-01-26 23:31:00,333 p=37932 u=ali n=ansible | Centos-Server-1            : ok=2    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:31:00,333 p=37932 u=ali n=ansible | Centos-Server-2            : ok=2    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:32:33,933 p=38210 u=ali n=ansible | PLAY [Install Python, Docker, Gitlab-Runner PlayBook  ...] ******************************************************************************************************************
+2024-01-26 23:32:33,962 p=38210 u=ali n=ansible | TASK [User_Handling : Deleting User "ali.mehraji" ...] **********************************************************************************************************************
+2024-01-26 23:32:34,512 p=38210 u=ali n=ansible | fatal: [Centos-Server-2]: FAILED! => {"changed": false, "msg": "userdel: user ali.mehraji is currently used by process 4712\n", "name": "ali.mehraji", "rc": 8}
+2024-01-26 23:32:34,832 p=38210 u=ali n=ansible | changed: [Centos-Server-1]
+2024-01-26 23:32:34,859 p=38210 u=ali n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-01-26 23:32:34,859 p=38210 u=ali n=ansible | Centos-Server-1            : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:32:34,859 p=38210 u=ali n=ansible | Centos-Server-2            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:32:41,560 p=38280 u=ali n=ansible | PLAY [Install Python, Docker, Gitlab-Runner PlayBook  ...] ******************************************************************************************************************
+2024-01-26 23:32:41,590 p=38280 u=ali n=ansible | TASK [User_Handling : Deleting User "ali.mehraji" ...] **********************************************************************************************************************
+2024-01-26 23:32:41,940 p=38280 u=ali n=ansible | ok: [Centos-Server-1]
+2024-01-26 23:32:41,945 p=38280 u=ali n=ansible | fatal: [Centos-Server-2]: FAILED! => {"changed": false, "msg": "userdel: user ali.mehraji is currently used by process 4712\n", "name": "ali.mehraji", "rc": 8}
+2024-01-26 23:32:41,968 p=38280 u=ali n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-01-26 23:32:41,968 p=38280 u=ali n=ansible | Centos-Server-1            : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:32:41,968 p=38280 u=ali n=ansible | Centos-Server-2            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:33:00,592 p=38372 u=ali n=ansible | PLAY [Install Python, Docker, Gitlab-Runner PlayBook  ...] ******************************************************************************************************************
+2024-01-26 23:33:00,621 p=38372 u=ali n=ansible | TASK [User_Handling : Deleting User "ali.mehraji" ...] **********************************************************************************************************************
+2024-01-26 23:33:00,976 p=38372 u=ali n=ansible | ok: [Centos-Server-1]
+2024-01-26 23:33:00,980 p=38372 u=ali n=ansible | fatal: [Centos-Server-2]: FAILED! => {"changed": false, "msg": "userdel: user ali.mehraji is currently used by process 4990\n", "name": "ali.mehraji", "rc": 8}
+2024-01-26 23:33:01,010 p=38372 u=ali n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-01-26 23:33:01,010 p=38372 u=ali n=ansible | Centos-Server-1            : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:33:01,010 p=38372 u=ali n=ansible | Centos-Server-2            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:36:46,163 p=38750 u=ali n=ansible | PLAY [Install Python, Docker, Gitlab-Runner PlayBook  ...] ******************************************************************************************************************
+2024-01-26 23:36:46,170 p=38750 u=ali n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-01-26 23:36:47,200 p=38750 u=ali n=ansible | ok: [Centos-Server-2]
+2024-01-26 23:36:47,205 p=38750 u=ali n=ansible | ok: [Centos-Server-1]
+2024-01-26 23:36:47,222 p=38750 u=ali n=ansible | TASK [User_Handling : Deleting User "ali.mehraji" ...] **********************************************************************************************************************
+2024-01-26 23:36:47,582 p=38750 u=ali n=ansible | ok: [Centos-Server-1]
+2024-01-26 23:36:47,900 p=38750 u=ali n=ansible | changed: [Centos-Server-2]
+2024-01-26 23:36:47,931 p=38750 u=ali n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-01-26 23:36:47,931 p=38750 u=ali n=ansible | Centos-Server-1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:36:47,931 p=38750 u=ali n=ansible | Centos-Server-2            : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

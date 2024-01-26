@@ -1,0 +1,12 @@
+---
+RedHat:
+  hosts:
+    Centos-Server-1:
+    Centos-Server-2:
+
+Debian:
+  hosts:
+    Debian-Server-1:
+    Debian-Server-2:
+    Debian-Server-3:
+...

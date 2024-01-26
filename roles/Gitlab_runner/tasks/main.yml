@@ -1,0 +1,8 @@
+---
+  - include_tasks: Download.yml
+    when: ansible_os_family == 'RedHat'
+  - include_tasks: RedHat-Install.yml
+    when: ansible_os_family == 'RedHat'
+  - include_tasks: Debian-Install.yml
+    when: ansible_os_family == 'Debian'
+  - include_tasks: Shell-Register.yml

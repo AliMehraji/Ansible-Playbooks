@@ -1,0 +1,9 @@
+---
+- name: Add SSH Key to Authorized Keys
+  authorized_key:
+    user: "{{ USER_NAME }}"
+    key: "{{ SSH_KEY }}"
+    state: present
+  tags:
+    - add_ssh_key
+...

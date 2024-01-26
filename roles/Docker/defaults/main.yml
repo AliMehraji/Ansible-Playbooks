@@ -1,0 +1,80 @@
+---
+
+DEBIAN_OLD_DOCKER_VERSION:
+  - docker.io 
+  - docker-doc 
+  - docker-compose 
+  - podman-docker
+  - containerd 
+  - runc
+  - docker-ce 
+  - docker-ce-cli 
+  - containerd.io 
+  - docker-buildx-plugin 
+  - docker-compose-plugin 
+  - docker-ce-rootless-extras
+
+DEBIAN_DEPENDENCIES:
+  - ca-certificates 
+  - apt-transport-https
+  - curl 
+  - gnupg
+
+# Docker repo URL.
+DOCKER_REPO_URL: https://download.docker.com/linux
+
+# Used only for Debian/Ubuntu. Switch 'stable' to 'nightly' if needed.
+DOCKER_APT_RELEASE_CHANNEL: stable
+DOCKER_APT_ARCH: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
+DOCKER_APT_REPOSITORY: "deb [arch={{ DOCKER_APT_ARCH }}] {{ DOCKER_REPO_URL }}/{{ ansible_distribution | lower }} {{ ansible_distribution_release }} {{ DOCKER_APT_RELEASE_CHANNEL }}"
+DOCKER_APT_IGNORE_KEY_ERROR: true
+DOCKER_APT_GPG_KEY: "{{ DOCKER_REPO_URL }}/{{ ansible_distribution | lower }}/gpg"
+ 
+
+
+REDHAT_OLD_DOCKER_VERSION:
+  - docker
+  - docker-client
+  - docker-common
+  - docker-latest
+  - docker-latest-logrotate
+  - docker-logrotate
+  - docker-engine
+
+REDHAT_DEPENDENCIES:
+  - epel-release 
+  - ca-certificates
+  - curl
+  - gnupg2
+  - gnupg2-smime
+
+OLD_DOCKER_VERSION_STATE: absent
+DEPENDENCIES_STATE: present
+DOCKER_PACKAGES_STATE: present
+# Enable repo setup
+DOCKER_ADD_REPO: true
+# Service options For handler.
+DOCKER_SERVICE_MANAGE: true
+DOCKER_SERVICE_STATE: started
+DOCKER_SERVICE_ENABLED: true
+DOCKER_RESTART_HANDLER_STATE: restarted
+
+DOCKER_EDITION: 'ce'
+
+DOCKER:
+  - "docker-{{ DOCKER_EDITION }}"
+  - "docker-{{ DOCKER_EDITION }}-cli"
+  - containerd.io 
+  - docker-buildx-plugin 
+  - docker-compose-plugin
+
+
+
+# Used only for RedHat/CentOS/Fedora.
+# ternary operator :
+# Return the first value if the input is True, the second if False.
+# see https://docs.ansible.com/ansible/latest/collections/ansible/builtin/ternary_filter.html
+DOCKER_YUM_REPO_URL: "{{ DOCKER_REPO_URL }}/{{ (ansible_distribution == 'Fedora') | ternary('fedora','centos') }}/docker-{{ DOCKER_EDITION }}.repo"
+Docker_YUM_GPG_KEY: "{{ DOCKER_REPO_URL }}/centos/gpg"
+
+

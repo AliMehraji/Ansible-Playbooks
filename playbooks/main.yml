@@ -1,0 +1,11 @@
+---
+- name: Install Python, Docker, Gitlab-Runner PlayBook  ...
+  hosts: RedHat
+  become: true
+  roles:
+    # - Update
+    # - Install-Python
+    # - Docker
+    # - Gitlab_runner
+    - User_Handling
+...
