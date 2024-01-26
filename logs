@@ -82,3 +82,60 @@
 2024-01-26 23:36:47,931 p=38750 u=ali n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
 2024-01-26 23:36:47,931 p=38750 u=ali n=ansible | Centos-Server-1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2024-01-26 23:36:47,931 p=38750 u=ali n=ansible | Centos-Server-2            : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-26 23:42:49,519 p=39996 u=ali n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: RedHat
+
+2024-01-26 23:42:49,519 p=39996 u=ali n=ansible | playbook: playbooks/main.yml
+2024-01-26 23:42:49,608 p=39954 u=ali n=ansible | [DEPRECATION WARNING]: Encryption using the Python crypt module is deprecated. 
+The Python crypt module is deprecated and will be removed from Python 3.13. 
+Install the passlib library for continued encryption functionality. This 
+feature will be removed in version 2.17. Deprecation warnings can be disabled 
+by setting deprecation_warnings=False in ansible.cfg.
+2024-01-26 23:42:50,287 p=40001 u=ali n=ansible | {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO",
+    "ansible.netcommon.enable": "Switch to elevated permissions on a network device",
+    "community.general.doas": "Do As user",
+    "community.general.dzdo": "Centrify's Direct Authorize",
+    "community.general.ksu": "Kerberos substitute user",
+    "community.general.machinectl": "Systemd's machinectl privilege escalation",
+    "community.general.pbrun": "PowerBroker run",
+    "community.general.pfexec": "profile based execution",
+    "community.general.pmrun": "Privilege Manager run",
+    "community.general.sesu": "CA Privileged Access Manager",
+    "community.general.sudosu": "Run tasks using sudo su -",
+    "containers.podman.podman_unshare": "Run tasks using podman unshare"
+}
+2024-01-26 23:42:55,031 p=40056 u=ali n=ansible | ERROR! the role 'Install-Python' was not found in /home/ali/Projects/Ansible-Playbooks/playbooks/roles:/home/ali/.cache/ansible-compat/45f2ec/roles:/home/ali/Projects/Ansible-Playbooks/roles:/home/ali/Projects/Ansible-Playbooks/roles:/home/ali/Projects/Ansible-Playbooks/playbooks
+
+The error appears to be in '/home/ali/Projects/Ansible-Playbooks/playbooks/main.yml': line 7, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - Update
+    - Install-Python
+      ^ here
+
+2024-01-26 23:43:43,731 p=40193 u=ali n=ansible | ERROR! the role 'Install-Python' was not found in /home/ali/Projects/Ansible-Playbooks/playbooks/roles:/home/ali/.cache/ansible-compat/45f2ec/roles:/home/ali/Projects/Ansible-Playbooks/roles:/home/ali/Projects/Ansible-Playbooks/roles:/home/ali/Projects/Ansible-Playbooks/playbooks
+
+The error appears to be in '/home/ali/Projects/Ansible-Playbooks/playbooks/main.yml': line 7, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - Update
+    - Install-Python
+      ^ here
+
+2024-01-26 23:43:49,728 p=40234 u=ali n=ansible | ERROR! the role 'Install-Python' was not found in /home/ali/Projects/Ansible-Playbooks/playbooks/roles:/home/ali/.cache/ansible-compat/45f2ec/roles:/home/ali/Projects/Ansible-Playbooks/roles:/home/ali/Projects/Ansible-Playbooks/roles:/home/ali/Projects/Ansible-Playbooks/playbooks
+
+The error appears to be in '/home/ali/Projects/Ansible-Playbooks/playbooks/main.yml': line 7, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - Update
+    - Install-Python
+      ^ here
+
