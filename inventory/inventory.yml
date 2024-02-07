@@ -8,5 +8,5 @@ Debian:
   hosts:
     Debian-Server-1:
     Debian-Server-2:
-    Debian-Server-3:
+      #   Debian-Server-3:
 ...

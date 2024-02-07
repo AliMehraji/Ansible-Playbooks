@@ -1,6 +1,6 @@
 ---
 # Remote Server IP
-ansible_host: 192.168.122.11
+ansible_host: 192.168.122.12
 # Remote Server User
 ansible_user: vagrant
 # If You need To Add more Variable Uncomment Below 

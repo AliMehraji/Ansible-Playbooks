@@ -4,8 +4,8 @@
   become: true
   roles:
     - Update
-    - Install-Python
-    - User_Handling
-    - Docker
-    - Gitlab_runner
+      #  - Install-Python
+      #  - User_Handling
+      #  - Docker
+      #  - Gitlab_runner
 ...

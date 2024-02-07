@@ -139,3 +139,81 @@ The offending line appears to be:
     - Install-Python
       ^ here
 
+2024-02-01 18:17:20,868 p=19755 u=ali n=ansible | Debian-Server-1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2024-02-01 18:17:20,869 p=19755 u=ali n=ansible | Centos-Server-2 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2024-02-01 18:17:23,500 p=19755 u=ali n=ansible | Debian-Server-3 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.122.14 port 22: No route to host",
+    "unreachable": true
+}
+2024-02-01 18:17:23,501 p=19755 u=ali n=ansible | Debian-Server-2 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.122.13 port 22: No route to host",
+    "unreachable": true
+}
+2024-02-01 18:17:30,399 p=19755 u=ali n=ansible | Centos-Server-1 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.122.10 port 22: Connection timed out",
+    "unreachable": true
+}
+2024-02-01 18:19:41,481 p=21080 u=ali n=ansible | Centos-Server-1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2024-02-01 18:19:41,569 p=21080 u=ali n=ansible | Debian-Server-1 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+2024-02-01 18:19:41,569 p=21080 u=ali n=ansible | Centos-Server-2 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+2024-02-01 18:19:44,107 p=21080 u=ali n=ansible | Debian-Server-2 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.122.13 port 22: No route to host",
+    "unreachable": true
+}
+2024-02-01 18:20:27,569 p=21347 u=ali n=ansible | Centos-Server-2 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+2024-02-01 18:20:27,575 p=21347 u=ali n=ansible | Centos-Server-1 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+2024-02-01 18:20:27,591 p=21347 u=ali n=ansible | Debian-Server-1 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+2024-02-01 18:20:27,621 p=21347 u=ali n=ansible | Debian-Server-2 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2024-02-01 18:20:52,048 p=21574 u=ali n=ansible | PLAY [Install Python, Docker, Gitlab-Runner PlayBook  ...] *****************************************************************************
+2024-02-01 18:20:52,078 p=21574 u=ali n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2024-02-01 18:20:52,866 p=21574 u=ali n=ansible | ok: [Centos-Server-1]
+2024-02-01 18:20:52,892 p=21574 u=ali n=ansible | ok: [Centos-Server-2]
+2024-02-01 18:20:52,907 p=21574 u=ali n=ansible | TASK [Update : include_tasks] **********************************************************************************************************
+2024-02-01 18:20:52,928 p=21574 u=ali n=ansible | included: /home/ali/Projects/Ansible-Playbooks/roles/Update/tasks/RedHat.yml for Centos-Server-1, Centos-Server-2
+2024-02-01 18:20:52,932 p=21574 u=ali n=ansible | TASK [Update : Updating RedHat Based ...] **********************************************************************************************
+2024-02-01 18:25:12,061 p=21574 u=ali n=ansible |  [ERROR]: User interrupted execution
+
+2024-02-01 18:27:34,817 p=22527 u=ali n=ansible | ERROR! Invalid query. At least one search term, platform, galaxy tag or author must be provided.
