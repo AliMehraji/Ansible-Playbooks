@@ -247,3 +247,49 @@ The offending line appears to be:
     - Install-Python
       ^ here
 
+2024-04-19 10:47:57,047 p=16271 u=ali n=ansible | ERROR! the role 'OS_Update' was not found in /home/ali/Projects/Ansible-Playbooks/playbooks/roles:/home/ali/.cache/ansible-compat/45f2ec/roles:/home/ali/Projects/Ansible-Playbooks/roles:/home/ali/Projects/Ansible-Playbooks/roles:/home/ali/Projects/Ansible-Playbooks/playbooks
+
+The error appears to be in '/home/ali/Projects/Ansible-Playbooks/playbooks/main.yml': line 6, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - OS_Update
+      ^ here
+
+2024-04-19 10:53:06,239 p=17701 u=ali n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: RedHat
+
+2024-04-19 10:53:06,240 p=17701 u=ali n=ansible | playbook: playbooks/main.yml
+2024-04-19 10:53:07,152 p=17705 u=ali n=ansible | {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO",
+    "ansible.netcommon.enable": "Switch to elevated permissions on a network device",
+    "community.general.doas": "Do As user",
+    "community.general.dzdo": "Centrify's Direct Authorize",
+    "community.general.ksu": "Kerberos substitute user",
+    "community.general.machinectl": "Systemd's machinectl privilege escalation",
+    "community.general.pbrun": "PowerBroker run",
+    "community.general.pfexec": "profile based execution",
+    "community.general.pmrun": "Privilege Manager run",
+    "community.general.sesu": "CA Privileged Access Manager",
+    "community.general.sudosu": "Run tasks using sudo su -",
+    "containers.podman.podman_unshare": "Run tasks using podman unshare"
+}
+2024-04-19 10:53:07,301 p=17661 u=ali n=ansible | [DEPRECATION WARNING]: Encryption using the Python crypt module is deprecated. 
+The Python crypt module is deprecated and will be removed from Python 3.13. 
+Install the passlib library for continued encryption functionality. This 
+feature will be removed in version 2.17. Deprecation warnings can be disabled 
+by setting deprecation_warnings=False in ansible.cfg.
+2024-04-19 10:55:52,020 p=18055 u=ali n=ansible | ERROR! the role 'Install_Docker' was not found in /home/ali/Projects/Ansible-Playbooks/playbooks/roles:/home/ali/.cache/ansible-compat/45f2ec/roles:/home/ali/Projects/Ansible-Playbooks/roles:/home/ali/Projects/Ansible-Playbooks/roles:/home/ali/Projects/Ansible-Playbooks/playbooks
+
+The error appears to be in '/home/ali/Projects/Ansible-Playbooks/playbooks/main.yml': line 9, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - User_Handling
+    - Install_Docker
+      ^ here
+
