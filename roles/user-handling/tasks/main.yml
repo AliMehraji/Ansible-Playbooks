@@ -1,0 +1,5 @@
+---
+- import_tasks: Create-User.yml
+- import_tasks: Copy-ssh-key.yml
+- import_tasks: Update-Password.yml
+- import_tasks: Delete-User.yml

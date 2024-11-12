@@ -1,0 +1,11 @@
+---
+# tasks file for update
+  - name: Updating Debian Based Distributions ...
+    apt:
+      name: "*"
+      state: latest
+      update_cache: true
+      autoremove: true
+    tags:
+      - update
+      - update_debian
