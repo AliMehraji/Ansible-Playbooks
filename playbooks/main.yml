@@ -3,9 +3,9 @@
   hosts: RedHat
   become: true
   roles:
-    - OS_Update
-    - Install_Python
-    - User_Handling
-    - Install_Docker
-    - Install_Gitlab_runner
+    - os-update
+    - install-python
+    - user-handling
+    - install-docker
+    - install_gitlab_runner
 ...
