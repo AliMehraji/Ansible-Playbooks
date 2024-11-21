@@ -1,11 +1,11 @@
 ---
 # Variables for user-handling
 
-USER_NAME: Your-User-Name
-USER_PASSWORD: Your-Secure-Password
-USER_SHELL: /bin/bash
-COMMENT: User-Comment
-SSH_KEY: "{{ lookup('file', '/path/to/your/public_key.pub') }}"
+user_name: Your-User-Name
+user_password: Your-Secure-Password
+user_shell: /bin/bash
+user_ssh_key: "{{ lookup('file', '/path/to/user/public_key.pub') }}"
+user_comment: User-Comment
 
 # Give this key a value if you're changing a user's password
-NEW_PASSWORD:
+user_new_password: User-New-Passwd

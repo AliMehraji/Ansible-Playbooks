@@ -1,5 +1,9 @@
 ---
-- import_tasks: Create-User.yml
-- import_tasks: Copy-ssh-key.yml
-- import_tasks: Update-Password.yml
-- import_tasks: Delete-User.yml
+- name: Creating User
+  ansible.builtin.import_tasks: Create-User.yml
+- name: Copy User's SSH-KEY
+  ansible.builtin.import_tasks: Copy-ssh-key.yml
+- name: Update User's Password
+  ansible.builtin.import_tasks: Update-Password.yml
+- name: Delete User
+  ansible.builtin.import_tasks: Delete-User.yml
