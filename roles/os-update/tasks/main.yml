@@ -1,6 +1,8 @@
 ---
-- include_tasks: RedHat.yml
+- name: Updating RedHat Linux Distribution
+  ansible.builtin.import_tasks: RedHat.yml
   when: "ansible_os_family == 'RedHat'"
-- include_tasks: Debian.yml
+- name: Updating Debian Based Linux Distribution
+  ansible.builtin.import_tasks: Debian.yml
   when: "ansible_os_family == 'Debian'"
 ...

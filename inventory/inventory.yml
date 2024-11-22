@@ -8,4 +8,31 @@ Debian:
   hosts:
     Debian-Server-1:
     Debian-Server-2:
+
+# Here You can set hosts name from .ssh/config
+# if servers have special config
+
+# -- Sample .ssh/config
+
+# Host Dest-Server
+#   HostName 192.168.1.2
+#   User ali
+#   Port 22
+#   stricthostkeychecking no
+#   proxycommand ssh -W %h:%p -q Jump-Server
+
+# Host Jump-Server
+#   HostName 192.168.2.2
+#   User alimehr
+#   Port 2200
+#   stricthostkeychecking no
+
+Servers:
+  hosts:
+    Dest-Server:
+
+VPS:
+  hosts:
+    vps-hetz:
+    vps-aeza:
 ...
