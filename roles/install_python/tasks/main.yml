@@ -1,0 +1,23 @@
+---
+- name: Check if Python is already installed
+  ansible.builtin.command: python3 --version
+  register: python_check
+  ignore_errors: true
+  tags:
+    - install_py
+
+- name: Check if pip is already installed
+  ansible.builtin.command: pip3 --version
+  register: pip_check
+  ignore_errors: true
+  tags:
+    - install_py
+
+- name: Installing Python ...
+  ansible.builtin.raw: "{{ lookup('file', 'python-installation.sh') }}"
+  args:
+    executable: /bin/bash
+  when: python_check.rc != 0 or pip_check.rc != 0
+  tags:
+    - install_py
+...

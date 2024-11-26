@@ -1,11 +1,11 @@
 ---
 - name: An Ansible Playbook
   become: true
-  hosts: VPS
+  hosts: Terraform_Kvm_vms
   roles:
-    - os-update
-    - install-python
-    - user-handling
-    - install-docker
+    - os_update
+    - install_python
+    - user_handling
+    - install_docker
     - install_gitlab_runner
 ...
