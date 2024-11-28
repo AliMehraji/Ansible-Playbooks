@@ -1,0 +1,7 @@
+---
+- name: User Playbook
+  become: true
+  hosts: Terraform_Kvm_vms
+  roles:
+    - user_handling
+...

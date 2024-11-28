@@ -4,6 +4,4 @@
     user: "{{ user_name }}"
     key: "{{ user_ssh_key }}"
     state: present
-  tags:
-    - add_ssh_key
 ...

@@ -9,6 +9,4 @@
     groups:
       - "{{ 'wheel' if ansible_os_family == 'RedHat' else 'sudo' }}"
     append: true
-  tags:
-    - create_user
 ...
