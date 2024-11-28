@@ -1,11 +1,8 @@
 ---
-- name: Updating Packages
+- name: Updating Debian Packages
   ansible.builtin.apt:
     name: "*"
     state: latest
     update_cache: true
     autoremove: true
-  tags:
-    - update_linux
-    - update_debian
 ...

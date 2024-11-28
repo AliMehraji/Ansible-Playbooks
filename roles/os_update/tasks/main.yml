@@ -2,7 +2,14 @@
 - name: Updating RedHat Linux Distribution
   ansible.builtin.import_tasks: RedHat.yml
   when: "ansible_os_family == 'RedHat'"
+  tags:
+    - update_linux
+    - update_redhat
+
 - name: Updating Debian Based Linux Distribution
   ansible.builtin.import_tasks: Debian.yml
   when: "ansible_os_family == 'Debian'"
+  tags:
+    - update_linux
+    - update_debian
 ...
