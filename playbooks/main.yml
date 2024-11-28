@@ -6,6 +6,5 @@
     - os_update
     - install_python
     - user_handling
-    - install_docker
-    - install_gitlab_runner
+    - geerlingguy.docker
 ...
