@@ -1,0 +1,32 @@
+---
+# manage user creation and group assignment
+
+# To handle cases where user.group is defined but empty
+# condition | ternary(true_value, false_value)
+
+- name: User | Create User Group
+  ansible.builtin.group:
+    name: "{{ (user.group is defined and user.group | length > 0) | ternary(user.group, user.name) }}"
+    system: "{{ user.system | default(omit) }}"
+
+- name: User | Create User
+  ansible.builtin.user:
+    name: "{{ user.name }}"
+    comment: "{{ user.comment | default(omit) }}"
+    create_home: "{{ user.create_home | default(True) | bool }}"
+    home: "{{ user.home | default(omit) }}"
+    shell: "{{ user.shell | default(omit) }}"
+    system: "{{ user.system | default(omit) }}"
+    state: "{{ user.state | default('present') }}"
+    password: "{{ user.password | password_hash('sha512') }}"
+  when: user.name != "root"
+
+- name: User | Add User to Groups
+  ansible.builtin.user:
+    name: "{{ user.name }}"
+    groups: "{{ item }}"
+    append: "{{ user.append | default(omit) | bool }}"
+  with_items: "{{ user_groups }}"
+  when: user.name != "root"
+
+...

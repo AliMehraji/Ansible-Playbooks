@@ -1,0 +1,19 @@
+---
+- name: Create User
+  ansible.builtin.import_tasks: create-user.yml
+  tags:
+    - create_user
+
+- name: Copy User's SSH-KEY
+  ansible.builtin.import_tasks: copy-ssh-key.yml
+  tags:
+    - add_user_ssh_key
+
+- name: Update User's Password
+  ansible.builtin.import_tasks: update-password.yml
+  tags:
+    - update_user_password
+
+- name: Delete User and User Group
+  ansible.builtin.import_tasks: delete-user-group.yml
+
