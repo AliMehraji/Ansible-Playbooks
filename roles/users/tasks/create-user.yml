@@ -4,10 +4,10 @@
 # To handle cases where user.group is defined but empty
 # condition | ternary(true_value, false_value)
 
-- name: User | Create User Group
-  ansible.builtin.group:
-    name: "{{ (user.group is defined and user.group | length > 0) | ternary(user.group, user.name) }}"
-    system: "{{ user.system | default(omit) }}"
+# - name: User | Create User Group
+#   ansible.builtin.group:
+#     name: "{{ (user.group is defined and user.group | length > 0) | ternary(user.group, user.name) }}"
+#     system: "{{ user.system | default(omit) | bool}}"
 
 - name: User | Create User
   ansible.builtin.user:

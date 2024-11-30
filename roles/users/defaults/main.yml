@@ -1,26 +1,21 @@
 ---
 # Default configuration for user management
 user:
-  group: ""
-  # If User is not system user , comment the `system`
-  # It uses for both group and user
-  system: ""
-  name: ""
-  comment: ""
+  # group: "random-user-group"
+  system: false
+  name: "random-user"
+  comment: "Random User"
   create_home: true
-  # If User doesn't need to have home directory other than the default /home/user.name
-  # comment the `home`
-  home: ""
+
+  # comment the `home`, If home dir is not default /home/user.name
+  home: "/home/random-home-user"
   shell: "/bin/bash"
   sudoer: false
   append: true
   state: present
-  password: ""
+  password: "P4SSW0rd"
 
-# Define user_groups with conditional group for sudo/wheel
 user_groups:
-  - "{{ 'wheel' if ansible_os_family == 'RedHat' else 'sudo' if user.sudoer else '' }}"
-
+  - "{{ ('wheel' if ansible_os_family == 'RedHat' else 'sudo') if user.sudoer else '' }}"
 user_new_password: ""
-
-user_ssh_key_path: "{{ lookup('file', '/home/ali/.ssh/id_ed25519.pub') }}"
+user_ssh_key_path: "{{ lookup('file', '/path/to/home/user/.ssh/ssh-key.pub') }}"
