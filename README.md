@@ -1,19 +1,16 @@
-Example Playbook
-----------------
+# How To
 
 This is how you need to use playbooks but you may need comment some roles and use tags.
 
-```
+```bash
 ansible-playbook playbooks/main.yml --tags "create_user"
 ```
 
-Like Below For Role when you need user handling role in `playbooks/main.yml`
+## Playbooks Notes
 
-```
-roles:
-  - Update
-  - Install-Python
-  - User_Handling
-  # - Docker
-  # - Gitlab_runner
+For Docker Installation via `playbooks/docker.yml`:
+> install the `geerlingguy.docker` role
+
+```bash
+proxychains4 ansible-galaxy role install -r requirements.yaml --roles-path ./roles
 ```
