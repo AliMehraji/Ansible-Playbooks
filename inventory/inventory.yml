@@ -36,7 +36,7 @@ VPS:
     vps-hetz:
     vps-aeza:
 
-Terraform_Kvm_vms:
+Terraform_Infra:
   hosts:
     Terraform-Kvm-Ubuntu:
     Terraform-Kvm-Debian-12:

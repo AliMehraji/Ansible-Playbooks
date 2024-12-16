@@ -1,0 +1,9 @@
+---
+- name: Hardenning Playbook
+  become: true
+  hosts: VPS
+  roles:
+    - os_update
+    - ssh_hardening
+    - os_hardening
+...

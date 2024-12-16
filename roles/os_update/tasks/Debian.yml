@@ -5,4 +5,5 @@
     state: latest
     update_cache: true
     autoremove: true
+  environment: "{{ proxy_env | default({}) }}"
 ...

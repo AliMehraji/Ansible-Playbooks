@@ -1,10 +1,8 @@
 ---
-- name: An Ansible Playbook
+- name: Docker Playbook
   become: true
   hosts: Terraform_Kvm_vms
   roles:
     - os_update
-    - install_python
-    - user_handling
     - geerlingguy.docker
 ...

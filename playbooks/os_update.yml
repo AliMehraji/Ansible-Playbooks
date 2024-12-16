@@ -1,0 +1,7 @@
+---
+- name: Hardenning Playbook
+  become: true
+  hosts: VPS
+  roles:
+    - os_update
+...
