@@ -35,10 +35,12 @@ VPS:
   hosts:
     vps-hetz:
     vps-aeza:
+    linode-haproxy:
 
 Terraform_Infra:
   hosts:
     Terraform-Kvm-Ubuntu:
     Terraform-Kvm-Debian-12:
     Terraform-Kvm-Fedora:
+    
 ...

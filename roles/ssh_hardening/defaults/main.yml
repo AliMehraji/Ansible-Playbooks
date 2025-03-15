@@ -38,7 +38,7 @@ ssh_client_port: "19960" # ssh
 
 # one or more ip addresses, to which ssh-server should listen to.
 # Default is empty, but should be configured for security reasons!
-ssh_listen_to: [0.0.0.0] # sshd
+ssh_listen_to: [0.0.0.0, "::"] # sshd
 
 # Host RSA key size in bits
 ssh_host_rsa_key_size: 4096 # sshd
