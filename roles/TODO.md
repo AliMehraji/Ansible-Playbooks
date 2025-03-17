@@ -12,5 +12,5 @@
   - [ ] [NTP](https://github.com/geerlingguy/ansible-role-ntp)
   - [ ] nginx https://github.com/nginxinc/ansible-role-nginx
   - [ ] NFS https://github.com/geerlingguy/ansible-role-nfs
-  - [ ] [CertBot](https://github.com/geerlingguy/ansible-role-certbot) 
+  - [ ] [CertBot](https://github.com/geerlingguy/ansible-role-certbot)
   - [ ] [Backup](https://github.com/geerlingguy/ansible-role-backup)

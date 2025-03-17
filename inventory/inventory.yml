@@ -42,5 +42,5 @@ Terraform_Infra:
     Terraform-Kvm-Ubuntu:
     Terraform-Kvm-Debian-12:
     Terraform-Kvm-Fedora:
-    
+
 ...

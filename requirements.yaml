@@ -5,4 +5,3 @@ roles:
     version: 7.4.3
   - name: AliMehraji.users
     version: v1.0.3
-

@@ -32,4 +32,4 @@
 - [ ] Delete VM (Terraform )
 
 - [ ] Some Variables From inventory for vm_management
-- [ ] Connection to vCenter Host User, Password from Ansible-Vault 
+- [ ] Connection to vCenter Host User, Password from Ansible-Vault

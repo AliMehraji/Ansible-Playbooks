@@ -1,0 +1,13 @@
+---
+plugin: amazon.aws.aws_ec2
+regions:
+  - us-east-1
+hostvars_prefix: 'aws_'
+hostvars_suffix: '_ec2'
+secret_key:
+access_key:
+
+hostnames:
+  - network-interface.addresses.association.public-ip
+
+allow_duplicated_hosts: false
