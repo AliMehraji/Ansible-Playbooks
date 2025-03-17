@@ -7,6 +7,11 @@ repos:
       - id: check-merge-conflict
       - id: end-of-file-fixer
       - id: trailing-whitespace
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.24.0
+    hooks:
+      - id: gitleaks
+      # - id: gitleaks-system
 
   - repo: https://github.com/Yelp/detect-secrets
     rev: v1.5.0
