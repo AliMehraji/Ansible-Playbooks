@@ -35,7 +35,6 @@ VPS:
   hosts:
     vps-hetz:
     vps-aeza:
-    linode-haproxy:
 
 Terraform_Infra:
   hosts:
