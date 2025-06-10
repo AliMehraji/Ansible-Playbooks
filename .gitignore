@@ -1,3 +1,5 @@
 .vscode/
+.ansible/
 plugins/
 logs
+roles/geerlingguy.docker

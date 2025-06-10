@@ -1,8 +1,9 @@
 ---
 - name: Updating RedHat Packages
   ansible.builtin.dnf:
-    name: "*"
+    name: "{{ packages }}"
     state: latest
     update_cache: true
   environment: "{{ proxy_env | default({}) }}"
 ...
+
