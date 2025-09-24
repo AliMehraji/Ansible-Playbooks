@@ -1,7 +1,7 @@
 ---
 - name: User Playbook
   become: true
-  hosts: Terraform_Infra
+  hosts: KVM
   roles:
     - AliMehraji.users
 ...

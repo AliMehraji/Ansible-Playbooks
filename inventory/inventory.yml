@@ -14,14 +14,14 @@ Debian:
 
 # -- Sample .ssh/config
 
-# Host Dest-Server
+# Dest-Server
 #   HostName 192.168.1.2
 #   User ali
 #   Port 22
 #   stricthostkeychecking no
 #   proxycommand ssh -W %h:%p -q Jump-Server
 
-# Host Jump-Server
+# Jump-Server
 #   HostName 192.168.2.2
 #   User alimehr
 #   Port 2200
@@ -42,4 +42,11 @@ Terraform_Infra:
     Terraform-Kvm-Debian-12:
     Terraform-Kvm-Fedora:
 
+KVM:
+  hosts:
+    vm-kvm-rocky-9:
+    vm-kvm-rocky-10:
+    vm-kvm-debian-11:
+    vm-kvm-debian-12:
+    vm-kvm-centos-10:
 ...

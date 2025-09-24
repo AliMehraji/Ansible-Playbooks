@@ -1,0 +1,7 @@
+[submodule "roles/geerlingguy.docker"]
+	path = roles/geerlingguy.docker
+	url = https://github.com/geerlingguy/ansible-role-docker.git
+
+[submodule "roles/AliMehraji.users"]
+	path = roles/AliMehraji.users
+	url = https://github.com/AliMehraji/ansible-role-users.git
