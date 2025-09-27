@@ -3,5 +3,5 @@
 	url = https://github.com/geerlingguy/ansible-role-docker.git
 
 [submodule "roles/AliMehraji.users"]
-	path = roles/AliMehraji.users
-	url = https://github.com/AliMehraji/ansible-role-users.git
+	path = roles/cod3mas0n.users
+	url = https://github.com/cod3mas0n/ansible-role-users.git
